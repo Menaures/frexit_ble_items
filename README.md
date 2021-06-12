@@ -4,6 +4,8 @@ Programmcode in "mg126_spionglas"
 
 BLE code in "mg126_spionglas/app_hogp.c":
   Item service declaration -> l.104-108
+  
+Seeed Board Package v1.7.9
 
 Verwendeter Microcontroller https://wiki.seeedstudio.com/Wio-Lite-MG126/
 
