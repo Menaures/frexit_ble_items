@@ -30,3 +30,4 @@ Working principle:
 Known issues:
 - The disconnects seem to be caused by interrupts from the RTC. No interrupts occur if the RTC is not used.
 - The items turn undiscoverable after some time. This might be due to the microcontroller entering a low power mode if the processor is idle for too long.
+- The light schedule for the beer store contains a logic error. If the code is uploaded on a sunday the light will turn on despite the store being closed.
