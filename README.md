@@ -27,7 +27,7 @@ Working principle:
 - The beer store item also controls the lighting of the shop sign. This is archieved with hardcoded opening hours and the use of the internal RTC. Additionally a phototransistor is attached in the case of the shop sign to monitor the ambient luminosity.
 - The RTC does not have a dedicated power supply, meaning the time and date have to be manually set after the microcontroller has been powered off for a long period of time. This is archieved by uploading the sketch "mg126_set_time.ino" once before uploading the actual item code.
 
-Known issues:
+Fixed issues:
 - The disconnects seem to be caused by interrupts from the RTC. No interrupts occur if the RTC is not used.
-- The items turn undiscoverable after some time. This might be due to the microcontroller entering a low power mode if the processor is idle for too long.
+- The items turn undiscoverable after some time. This might be due to the microcontroller entering a low power mode if the processor is idle for too long. This is caused by the advertising duration and has been remedied by continously restarting advertising while no device is connected,
 - The light schedule for the beer store contains a logic error. If the code is uploaded on a sunday the light will turn on despite the store being closed.
