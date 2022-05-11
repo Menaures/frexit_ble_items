@@ -1,4 +1,4 @@
-# frexit_ble_items
+# Frexit Items
 
 Installation instructions:
 - Follow the steps described in https://wiki.seeedstudio.com/Wio-Lite-MG126/#getting-started.
